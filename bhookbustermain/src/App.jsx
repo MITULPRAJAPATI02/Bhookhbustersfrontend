@@ -18,7 +18,7 @@ import LocationForm from "./components/Restuarant/LocationForm";
 
 function App() {
   useEffect(() => {
-    // Apply saved theme on app load
+  
     const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
     document.body.classList.add(savedTheme === 'dark' ? 'dark-theme' : 'light-theme');
